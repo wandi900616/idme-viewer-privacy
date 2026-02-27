@@ -1,165 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.7;
-      color: #222;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 28px;
-      font-size: 20px;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    ul {
-      margin-left: 20px;
-    }
-
-    .updated {
-      color: #666;
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Teacher Portal Viewer</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        .container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        .highlight { background-color: #e8f4fd; border-left: 4px solid #2980b9; padding: 15px; margin: 20px 0; }
+        footer { margin-top: 40px; font-size: 0.9em; color: #7f8c8d; text-align: center; }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Last updated: February 27, 2026</strong></p>
+        
+        <p>This Privacy Policy explains how our application (“the App”) collects, uses, and protects user information. This App is designed as a productivity tool for educators to access external portals via an optimized WebView interface.</p>
 
-<h1>Privacy Policy</h1>
-<p class="updated"><strong>Last updated:</strong> 21 February 2026</p>
+        <h2>1. Information Collection and Use</h2>
+        <p>The App collects specific data types to enable its core features. We are committed to transparency regarding how this data is handled.</p>
+        
+        <div class="highlight">
+            <strong>A. User-Provided Information (Account Credentials)</strong><br>
+            To enable automated login and navigation within the teacher portal, the App collects:
+            <ul>
+                <li>User IDs (Usernames or Email addresses)</li>
+                <li>Passwords</li>
+            </ul>
+            <strong>Security:</strong> This data is stored locally on your device using Android’s <code>EncryptedSharedPreferences</code> (AES-256 encryption). It is never transmitted to the developer’s servers. It is used exclusively to facilitate the login process between your device and the official portal.
+        </div>
 
-<p>
-This Privacy Policy explains how this application (“the App”) collects, uses, and protects user information.
-</p>
+        <strong>B. Automated Collection (Service Providers)</strong>
+        <p>The App integrates the Google Mobile Ads (AdMob) SDK, which automatically collects certain data for advertising and analytics purposes:</p>
+        <ul>
+            <li>Device Identifiers (Advertising ID)</li>
+            <li>App Performance data (Crash logs and diagnostics)</li>
+            <li>App interactions</li>
+        </ul>
 
-<h2>1. Information Collection and Use</h2>
-<p>
-The App does <strong>not</strong> collect, store, or share any personally identifiable information on external servers.
-</p>
+        <h2>2. WebView and Third-Party Content</h2>
+        <p>The App displays content from official educational websites via an embedded WebView. All login actions and data interactions occur directly between the user and the official website. The App does not intercept or record credentials beyond the automation steps explicitly requested by the user.</p>
 
-<p>
-However, the App may temporarily store the following data <strong>locally on your device only</strong> to enable app functionality:
-</p>
+        <h2>3. Advertising</h2>
+        <p>We use Google AdMob to display rewarded advertisements. Google processes data in accordance with its own privacy policy. You can learn more here: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
 
-<ul>
-  <li>Username</li>
-  <li>Password (stored securely using Android’s encrypted storage)</li>
-</ul>
+        <h2>4. Data Security</h2>
+        <p>The App utilizes the <code>androidx.security:security-crypto</code> library. This ensures that any sensitive data stored at rest is protected by industry-standard encryption, preventing other applications on the device from accessing your credentials.</p>
 
-<p>
-This data:
-</p>
+        <h2>5. Data Deletion and Retention</h2>
+        <p><strong>Users maintain full control over their data:</strong></p>
+        <ul>
+            <li><strong>Local Deletion:</strong> You can permanently delete your stored User ID and Password at any time by clicking the <strong>"Logout"</strong> button within the App menu. This immediately wipes the encrypted storage.</li>
+            <li><strong>Uninstallation:</strong> Uninstalling the App or clearing the App storage via Android System Settings will also remove all locally stored data.</li>
+            <li><strong>External Data:</strong> Since we do not store your data on external servers, we do not maintain copies of your credentials once deleted from your device.</li>
+        </ul>
 
-<ul>
-  <li>Is stored only on the user’s device</li>
-  <li>Is never transmitted to the developer or third parties</li>
-  <li>Is used only to automate login and navigation steps requested by the user</li>
-</ul>
+        <h2>6. Children’s Privacy</h2>
+        <p>This App is intended for professional use by educators and is not intended for individuals under the age of 18. We do not knowingly collect data from children.</p>
 
-<h2>2. WebView Content</h2>
-<p>
-The App displays official web content using an embedded WebView.
-</p>
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy or your data, please contact the developer via the contact information provided on the Google Play Store listing.</p>
+    </div>
 
-<p>
-All login actions and interactions occur directly between the user and the official website.  
-The App does <strong>not</strong> intercept, modify, or record credentials entered on external websites beyond the automation explicitly requested by the user.
-</p>
-
-<h2>3. Advertising</h2>
-<p>
-The App uses <strong>Google AdMob</strong> to display rewarded advertisements.
-</p>
-
-<p>
-AdMob may collect information such as:
-</p>
-
-<ul>
-  <li>Device information</li>
-  <li>Advertising identifiers</li>
-  <li>Usage data</li>
-</ul>
-
-<p>
-This data is collected and processed by Google in accordance with their own privacy policies.
-</p>
-
-<p>
-Google Privacy Policy:  
-<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-https://policies.google.com/privacy
-</a>
-</p>
-
-<p>
-The App does not control or store advertising data.
-</p>
-
-<h2>4. Automation Credits</h2>
-<p>
-The App includes an optional automation feature that uses a credit-based system.
-</p>
-
-<ul>
-  <li>Credits are stored locally on the device</li>
-  <li>Credits are used only to unlock automation features</li>
-  <li>Credits do not represent real-world monetary value</li>
-</ul>
-
-<h2>5. Data Security</h2>
-<p>
-The App uses Android’s <strong>EncryptedSharedPreferences</strong> to protect sensitive data stored locally.
-</p>
-
-<p>
-Reasonable measures are taken to prevent unauthorized access, loss, or misuse of data on the device.
-</p>
-
-<h2>6. Third-Party Services</h2>
-<p>
-The App may use third-party services such as:
-</p>
-
-<ul>
-  <li>Google AdMob</li>
-  <li>Android System WebView</li>
-</ul>
-
-<p>
-These services operate under their own privacy policies.
-</p>
-
-<h2>7. Children’s Privacy</h2>
-<p>
-This App is not intended for children under the age of 13.
-</p>
-
-<h2>8. Changes to This Policy</h2>
-<p>
-This Privacy Policy may be updated from time to time.  
-Any changes will be reflected on this page.
-</p>
-
-<h2>9. Contact</h2>
-<p>
-If you have questions about this Privacy Policy, you may contact the developer via the app’s Play Store listing.
-</p>
-
+    <footer>
+        &copy; 2026 Teacher Portal Viewer Project. All rights reserved.
+    </footer>
 </body>
 </html>
